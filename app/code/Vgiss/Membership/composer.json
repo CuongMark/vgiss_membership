@@ -1,0 +1,22 @@
+{
+    "name": "vgiss/module-membership",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Mark Wolf",
+            "email": "cuonglv53@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Vgiss\\Membership\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

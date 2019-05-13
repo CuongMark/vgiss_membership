@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+	<event name="create_new_raffle_ticket_before">
+		<observer instance="Vgiss\Membership\Observer\Create\NewRaffleTicketBefore" name="vgiss_membership_observer_create_newraffleticketbefore"/>
+	</event>
+	<event name="sales_invoice_item_save_after">
+		<observer instance="Vgiss\Membership\Observer\Sales\InvoiceItemSaveAfter" name="vgiss_membership_observer_sales_invoiceitemsaveafter"/>
+	</event>
+</config>
