@@ -34,7 +34,7 @@ class InvoiceItemSaveAfter implements \Magento\Framework\Event\ObserverInterface
         $invoiceItem = $observer->getData('invoice_item');
         $customerId = $invoiceItem->getOrderItem()->getOrder()->getCustomerId();
         $product = $this->productRepository->getById($invoiceItem->getProductId());
-        $group_membership = $product->getData('Membsership');
+        $group_membership = $product->getData('membsership');
         $this->membership->addCustomerToGroup($customerId, $group_membership);
     }
 }

@@ -10,14 +10,15 @@
 			<resource>Vgiss_Membership::config_vgiss_membership</resource>
 			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
 				<label>General</label>
-				<field id="enable" showInDefault="0" showInStore="1" showInWebsite="0" sortOrder="10" translate="label" type="select">
+				<field id="enable" showInDefault="1" showInStore="1" showInWebsite="0" sortOrder="10" translate="label" type="select">
 					<label>Enable</label>
 					<comment/>
 					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
 				</field>
-				<field id="purchase_ticket_group" showInDefault="0" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="text">
+				<field id="purchase_ticket_group" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="multiselect">
 					<label>Purchase Ticket Groups</label>
 					<comment/>
+					<source_model>Vgiss\Membership\Model\Config\Source\PurchaseTicketGroup</source_model>
 				</field>
 			</group>
 		</section>
